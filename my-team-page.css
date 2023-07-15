@@ -1,0 +1,150 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.default-margin {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Header part */
+.header-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-left,
+.head-right {
+  flex: 1;
+}
+
+.head-left h1 {
+  color: #000;
+  font-family: PT Serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -.1rem;
+}
+
+.head-right h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.head-right p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Main section*/
+
+img {
+  width: 85%;
+  height: 90%;
+  object-fit: contain;
+  margin-right: .5rem;
+}
+
+
+.title-container {
+  display: flex;
+}
+
+.container-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 6rem;
+}
+
+.title-container {
+  margin-bottom: 1rem;
+}
+
+.special-profile {
+  margin-top: 6rem;
+}
+
+.title {
+  writing-mode: vertical-lr;
+
+  color: #000;
+  font-family: PT Serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.name {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Footer section */
+footer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  align-items: center;
+  background-color: black;
+  color: #FFF;
+  text-align: center;
+}
+
+.footer p {
+  padding: .25rem;
+}
+
+/* Responsive style applies */
+
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Resposive header */
+  .header-container {
+    flex-direction: column;
+  }
+
+  .head-right h3 {
+    margin-top: 1rem;
+  }
+
+  /* Responsive body */
+  .container-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .special-profile {
+    margin-top: 0;
+  }
+
+  .responsive-special {
+    margin-top: 6rem;
+  }
+}
